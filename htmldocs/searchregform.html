@@ -22,9 +22,22 @@
     <button type="button" id="logout" value="Logout">Logout</button>
   </div>
   <h1 id="pageTitle">ProtectPaws</h1>
-  <div id="importantLinks">
-    <a id="searchsecs" href="../htmldocs/searchregform.html">Search/Register for Sections</a>
+  <div id="searchFormDiv">
+      <form id="searchForm">
+        <select id="courseTopicSelect">
+            <option value="Computer Science">Computer Science</option>
+        </select>
+        <select id="courseDivisionSelect">
+            <option value="Upper Division">Upper Division</option>
+        </select>
+        <input type="text" placeholder="Course Number">
+      </form>
+      <div id="courseTableDiv">
+        <table id="courseTable">
+
+        </table>
+      </div>
   </div>
-  <script src="../javascript/protectpawshome.js"></script>
+  <script src="../javascript/searchregform.js"></script>
 </body>
 </html>

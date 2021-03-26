@@ -2,6 +2,7 @@ let users = new Map();
 
 users['swhitney'] = 'password'
 users['andrew'] = 'ladd'
+users['sschofie'] = '1234'
 
 const form = document.getElementById('loginform');
 const testintButton = document.getElementById('testing');

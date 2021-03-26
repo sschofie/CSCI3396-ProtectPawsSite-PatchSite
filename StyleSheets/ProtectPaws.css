@@ -1,20 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400&family=Hammersmith+One&family=Paytone+One&family=Ramabhadra&family=Roboto:wght@300;400&family=Russo+One&family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 #loginBanner {
     display: flex;
+    overflow-x: hidden;
 }
 
 #headerNav {
     display:flex;
+    min-width: 70%;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 3%;
+    margin-top: 2%;
 }
 
+
 #navelem {
-    padding-left: 10%;
+    font-size: 30px;
+    text-decoration: none;
+    transition: 1s;
+    color: rgb(160, 160, 160);
+}
+
+#navelem:hover {
+    color: rgb(173, 4, 4);
+    font-size: 30px;
+}
+
+.vl {
+    border-left: 2px solid rgb(160, 160, 160);
+    margin: -1.2% 2% 0 2%;
+    height: 100%;
+}
+
+#headerNav .current {
+    color:rgb(87, 87, 87)
+}
+
+#loginRedirect {
+    background-color: transparent;
+    font-family: 'Signika', sans-serif;
+    height: 50%;
+    margin-top: 1.5%;
+    color: rgb(155, 4, 4);
+    font-size: 15px;
+    padding: 1% 2% 1% 2%;
+    outline: none;
+    border-radius: 16px;
+    border: 2px solid rgb(155, 4, 4);
+    transition: 0.3s;
+}
+
+#loginRedirect:hover {
+    cursor: pointer;
+    background-color: rgb(155, 4, 4);
+    color: white;
+}
+
+#cardContentHome {
+    display: flex;
+    padding: 5% 8% 5% 8%;
+}
+
+#reliablewebpara {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: rgb(102, 102, 102);
+    padding: 3% 40% 0 0;
+    line-height: 200%;
+}
+
+#jumpinleeroydiv {
+    margin: 0 0 0 8%;
+}
+
+#welcome {
+    font-size: 70px;
+    font-family: 'Signika', sans-serif;
+    color: black;
+}
+
+.pagequote {
+    font-size: 30px;
+    font-family: 'Catamaran', sans-serif;
+    color: rgb(160, 160, 160);
+    font-weight: 600;
+    padding: 2% 0 0 0;
+}
+
+#logindiv {
+    display: flex;
+    margin: 1% 1% 0 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+}
+
+#logindeco {
+    background-color: rgb(155, 4, 4);
+    padding: 15% 10% 10% 10%;
+    border-radius: 15px 0 0 15px;
+}
+
+#welcomelogin {
+    font-size: 40px;
+    font-family: 'Signika', sans-serif;
+    color: white;
+}
+
+.loginpagequote {
+    font-size: 25px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 600;
+    padding: 4% 0 0 0;
+}
+
+#loginform {
+    padding: 1% 0 10% 0;
+    width: 50%;
+    text-align: center;
 }
 
 #loginText {
-    font-size: 29px;
-    padding: 1%;
+    font-size: 50px;
+    font-family: 'Signika', sans-serif;
+    padding: 10% 0 5% 0;
+    color: black;
 }
 
-input {
-    margin: 1%;
+.loginType {
+    padding: 2% 20% 2% 1%;
+    border-radius: 10px;
+    margin: 2%;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.loginType:focus {
+    border: 1px solid rgb(155, 4, 4);
+}
+
+#loginButton {
+    background-color: transparent;
+    font-family: 'Signika', sans-serif;
+    color: rgb(155, 4, 4);
+    font-size: 25px;
+    margin-top: 5%;
+    padding: 1% 17% 1% 17%;
+    outline: none;
+    border-radius: 16px;
+    border: 2px solid rgb(155, 4, 4);
+    transition: 0.3s;
+}
+
+#loginButton:hover {
+    cursor: pointer;
+    background-color: rgb(155, 4, 4);
+    color: white;
+}
+
+#logout {
+    background-color: transparent;
+    font-family: 'Signika', sans-serif;
+    height: 50%;
+    margin-top: 1.5%;
+    color: rgb(155, 4, 4);
+    font-size: 15px;
+    padding: 1% 2% 1% 2%;
+    outline: none;
+    border-radius: 16px;
+    border: 2px solid rgb(155, 4, 4);
+    transition: 0.3s;
+}
+
+#logout:hover {
+    cursor: pointer;
+    background-color: rgb(155, 4, 4);
+    color: white;
+}
+
+#mainCard {
+    margin: 1% 1% 1% 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+}
+
+#cardContent {
+    padding: 2%;
+}
+
+#pageTitle {
+    font-size: 40px;
+    font-family: 'Signika', sans-serif;
+    color: black;
+}
+
+#importantLinks {
+    padding: 3% 0 10% 0;
+}
+
+.StuMenuLinks {
+    padding: 1% 0 1% 0;
+}
+
+#searchFormDiv {
+    margin: 2% 0 0 0;
+}
+
+#searchForm {
+    margin: 0 0 2% 0;
+}
+
+select {
+    background-color: rgb(155, 4, 4);
+    font-family: 'Signika', sans-serif;
+    color: white;
+    padding: 0.5% 1% 0.5% 1%;
+    outline: none;
+    border: 2px solid rgb(155, 4, 4);
+    border-radius: 16px;
+}
+
+.searchsecselect {
+    margin: 2% 2% 2% 0;
+}
+
+#courseInput {
+    padding: 0.5% 1% 0.5% 1%;
+    border-radius: 10px;
+    margin: 2%;
+    border: 1px solid grey;
+    outline: none;
+}
+
+#courseInput:focus {
+    border: 1px solid rgb(155, 4, 4);
+}
+
+th {
+    background-color: rgb(155, 4, 4);    
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    padding: 1%;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color:rgb(221, 221, 221);
+}
+
+tr:hover {
+    cursor: pointer;
+    background-color: rgb(226, 247, 250);
+}
+
+td {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    padding: 1%;
 }

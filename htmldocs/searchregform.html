@@ -13,31 +13,38 @@
 </head>
 
 <body>
-  <div id="loggedInBanner">
-    <img id="tigerpawsbanner" src="../Resources/Images/tigerpawsbanner.png">
-    <nav id="headerNav">
-      <a id="navelem" href="">Main menu</a>
-      <a id="navelem" href="">Contact Us</a>
-    </nav>
-    <button type="button" id="logout" value="Logout">Logout</button>
-  </div>
-  <h1 id="pageTitle">ProtectPaws</h1>
-  <div id="searchFormDiv">
-      <form id="searchForm">
-        <select id="courseTopicSelect">
-            <option value="Computer Science">Computer Science</option>
-        </select>
-        <select id="courseDivisionSelect">
-            <option value="Upper Division">Upper Division</option>
-        </select>
-        <input type="text" placeholder="Course Number">
-      </form>
-      <div id="courseTableDiv">
-        <table id="courseTable">
+    <div id="loginBanner">
+        <img id="tigerpawsbanner" src="../Resources/Images/tigerpawsbanner.png">
+        <nav id="headerNav">
+          <a id="navelem" href="../htmldocs/home.html">Home</a>
+          <div class="vl"></div>
+          <a id="navelem" href="">Contact Us</a>
+        </nav>
+        <button type="button" id="logout" value="Logout">Logout</button>
+    </div>
 
-        </table>
-      </div>
-  </div>
+    <div id="mainCard">
+        <div id="cardContent">
+            <h1 id="pageTitle">Search/Register for Sections</h1>
+            <div id="searchFormDiv">
+                <form id="searchForm">
+                <select class="searchsecselect" id="courseTopicSelect">
+                    <option value="Computer Science">Computer Science</option>
+                </select>
+                <select class="searchsecselect" id="courseDivisionSelect">
+                    <option value="Upper Division">Upper Division</option>
+                </select>
+                <input type="text" id="courseInput" placeholder="Course Number">
+                </form>
+                <div id="courseTableDiv">
+                <table id="courseTable">
+        
+                </table>
+                </div>
+            </div>
+        </div>
+    </div> 
   <script src="../javascript/searchregform.js"></script>
+  <script src="../javascript/loginoutscript.js"></script>
 </body>
 </html>

@@ -1,0 +1,20 @@
+#loginBanner {
+    display: flex;
+}
+
+#headerNav {
+    display:flex;
+}
+
+#navelem {
+    padding-left: 10%;
+}
+
+#loginText {
+    font-size: 29px;
+    padding: 1%;
+}
+
+input {
+    margin: 1%;
+}

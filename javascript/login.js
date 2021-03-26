@@ -12,7 +12,7 @@ form.addEventListener('submit', () => {
 
     if(validateLogin(username, password)) {
         console.log("success");
-        form.action="file:///C:/Users/sabri/Documents/TrinityUni_2021/CSCI-3396/Project/htmldocs/protectpaws.html"; 
+        form.action="file:///C:/Users/sabri/Documents/TrinityUni_2021/CSCI-3396/CSCI3396-ProtectPawsSite/htmldocs/protectpaws.html"; 
     } else {
         console.log("failure");
     }

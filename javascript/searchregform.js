@@ -29,37 +29,15 @@ function renderTable(data) {
     data.forEach( course => {
         let Row = courseTable.insertRow(j);
 
-        let termCell = Row.insertCell(0);
-        let termCellData = document.createTextNode(course["Term"]);
-        termCell.appendChild(termCellData);
+        let i = 0;
+        tableHeaders.forEach(cellHeader => {
+            let currCell = Row.insertCell(i);
+            let currCellData = document.createTextNode(course[cellHeader]);
+            currCell.appendChild(currCellData);
+            i++;
+        })
 
-        let statusCell = Row.insertCell(1);
-        let statusCellData = document.createTextNode(course["Status"]);
-        statusCell.appendChild(statusCellData);
-
-        let secCell = Row.insertCell(2);
-        let secCellData = document.createTextNode(course["SecNameTitle"]);
-        secCell.appendChild(secCellData);
-
-        let locCell = Row.insertCell(3);
-        let locCellData = document.createTextNode(course["Location"]);
-        locCell.appendChild(locCellData);
-
-        let meetCell = Row.insertCell(4);
-        let meetCellData = document.createTextNode(course["MeetingInfo"]);
-        meetCell.appendChild(meetCellData);
-
-        let facultyCell = Row.insertCell(5);
-        let facultyCellData = document.createTextNode(course["Faculty"]);
-        facultyCell.appendChild(facultyCellData);
-
-        let credCell = Row.insertCell(6);
-        let credCellData = document.createTextNode(course["Credits"]);
-        credCell.appendChild(credCellData);
-
-        let pathCell = Row.insertCell(7);
-        let pathCellData = document.createTextNode(course["Pathways"]);
-        pathCell.appendChild(pathCellData);
+        j++;
     })
 }
 

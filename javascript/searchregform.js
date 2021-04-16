@@ -43,6 +43,8 @@ function renderTable(data) {
 
 renderTable(courses);
 
+
+
 function logOut() {
     window.location.replace("../htmldocs/login.html");
 }

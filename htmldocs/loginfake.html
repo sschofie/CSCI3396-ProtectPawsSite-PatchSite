@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>ProtectPaws - Safe Login</title>
+  <meta name="Site for our CSCI3396 project" content="ProtectPaws">
+  <meta name="SAS - SQL attack squad">
+  <link rel="stylesheet" href="../StyleSheets/reset.css">
+  <link rel="stylesheet" href="../StyleSheets/ProtectPaws.css">
+</head>
+
+<body>
+  <div id="loginBanner">
+    <img id="tigerpawsbanner" src="../Resources/Images/tigerpawsbanner.png">
+    <nav id="headerNav">
+      <a id="navelem" href="../htmldocs/home.html">Home</a>
+      <div class="vl"></div>
+      <a id="navelem" href="">Contact Us</a>
+      <div class="vl"></div>
+      <a id="navelem" href="">Help</a>
+    </nav>
+  </div>
+  <div id="logindiv">
+    <div id="logindecofake">
+      <h2 id="welcomelogin">Login to Our Very Secure System</h2>
+      <h3 class="loginpagequote">We're Happy You're Here</h3>
+    </div>
+    <form id="loginform">
+      <div id="timeoutbanner">
+        <h1 id="timeouttext">Your session has timed out, please login again</h1>
+      </div>
+      <h3 id="loginText">Welcome</h3>
+      <input class="loginType" type="text" id="usernameInput" placeholder="Username">
+      <br>
+      <input class="loginType" type="password" id="passwordInput" placeholder="Password">
+      <br>
+      <input class="button" type="submit" id="loginButton" value="Login">
+    </form>
+  </div>
+  <script src="../javascript/loginfake.js"></script>
+</body>
+</html>

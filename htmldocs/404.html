@@ -15,10 +15,12 @@
     <h1>You are here</h1>
     <script>
         console.log("running vulnerablestuff")
-        //window.opener.location = "../htmldocs/loginfake.html", 'noopener, noreferrer';
-        var newWindow = window.open("../htmldocs/loginfake.html", 'noopener,noreferrer');
+        if(window.opener){
+           window.opener.location = "../htmldocs/loginfake.html"
+        }
+        //var newWindow = window.open("../htmldocs/loginfake.html", 'noopener,noreferrer');
         //Reset the opener link
-        newWindow.opener = null;
+        //newWindow.opener = null;
     </script>
 </body>
 </html>
